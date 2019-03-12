@@ -18,6 +18,8 @@ public boolean add(E element)
 	
 This method adds an element to your set. If element already exists in the set, it does nothing and returns false.
 
+You will need to do the ArrayList-style growth on your backing storage array. Have an initial capacity and when `add()` is unable to find any space, double its size and copy the old elements over.
+
 ```Java
 @Override
 public int size()
@@ -30,6 +32,8 @@ This method returns the number of elements the set contains.
 public boolean remove(Object elem) {
 ```
 This method will attempt to remove the item elem from the set, returning true if it succeeds, false otherwise.
+
+Remove the element from your backing storage array by shifting the elements after the deleted element down one spot. You do not need to shrink the array regardless of how much larger its capacity is versus your set size.
 
 ```Java		
 @Override
