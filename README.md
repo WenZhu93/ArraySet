@@ -69,8 +69,10 @@ Returns an item not previously returned while iterating over our set.
 ## Requirements
 
 - The ArraySet class needs all of the methods and inner classes as explained above
-- A reasonable Test Suite that convinces you that your ArrayMap works (we will grade with our own test suite for correctness, but yours should exist and do what we want our test suite to do).
-- Documentation using javadoc.
+- A reasonable Test Suite that convinces you that your ArraySet works (we will grade with our own test suite for correctness, but yours should exist and do what we want our test suite to do).
+  - You should once again have 100% branch coverage. 
+  - You may use any of the templated methods provided by AbstractSet or AbstractCollection, and these also will serve as good methods to use in your JUnit tests since they implicitly call the methods you have overridden.
+- Documentation using javadoc for each method.
  
 ## Submission
  
