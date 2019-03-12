@@ -65,6 +65,18 @@ public T next()
 
 Returns an item not previously returned while iterating over our set.
 
+```Java
+@Override
+void remove()
+```
+
+The JavaDoc for this method states:
+
+>Removes from the underlying collection the last element returned by this iterator (optional operation). This method can be called only once per call to next(). The behavior of an iterator is unspecified if the underlying collection is modified while the iteration is in progress in any way other than by calling this method.
+>
+>Throws:
+>
+>   `IllegalStateException` - if the next method has not yet been called, or the remove method has already been called after the last call to the next method 
 
 ## Requirements
 
