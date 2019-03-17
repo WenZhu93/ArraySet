@@ -39,6 +39,9 @@ public class ArraySetTest {
 			itr2.remove();
 			//break;
 		}
+		assertThrows(IllegalStateException.class, () -> {
+			itr2.remove();
+		});
 		
 		// Test toString
 		System.out.println(test);
