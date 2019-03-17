@@ -98,7 +98,7 @@ public class ArraySet<E> extends AbstractSet<E> {
 	 * This method is to convert the ArraySet into a printable string
 	 * with its elements.
 	 * 
-	 * @param The string that represent the ArraySet
+	 * @return The string that represent the ArraySet
 	 */
 	public String toString() {
 		String str = "["+set[0];
